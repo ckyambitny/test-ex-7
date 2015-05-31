@@ -1,4 +1,4 @@
-nav a, nav a:hover, nav a:visited {
+nav a, nav a.active, nav a:visited {
     color: black;
     text-decoration: none;
 }
@@ -21,7 +21,7 @@ nav > ul > li:nth-child(2), nav > ul > li:nth-child(3) {
     background-position: right;
 }
 
-nav > ul > li:nth-child(2):hover, nav > ul > li:nth-child(3):hover {
+nav > ul > li:nth-child(2).active nav > ul > li:nth-child(3).active {
     background-image: url(https://cdn.icons8.com/Android/PNG/24/Arrows/expand_arrow-24.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -33,11 +33,11 @@ nav > ul > li:nth-child(3) >  ul > li:nth-child(2) {
     background-position: right;
 }
 
-nav li:hover {
+nav li.active {
     cursor: pointer;
 }
 
-nav li:hover > a {
+nav li.active > a {
     color: yellow;
 }
 
@@ -50,7 +50,7 @@ nav ul li ul li {
     display: none;
 }
  
-nav ul li:hover > ul > li {
+nav ul li.active > ul > li {
     display: block;
     top: 100%;
 }
