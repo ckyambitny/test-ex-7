@@ -6,6 +6,7 @@ var link3 = document.querySelector('nav > ul > li:nth-child(3) >  ul > li:nth-ch
 console.log(link3);
 
 function addActive(link) {
+    'use strict';
     link.addEventListener('click', function (e) {
         e.stopPropagation();
 
